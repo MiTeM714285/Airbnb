@@ -1,0 +1,480 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+#main-page {
+    /* 백그라운드 */
+    background: url(image/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+}
+.main-navi {
+    padding : 0 151.5px;
+    height : 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main-navi .logo {
+    height:80px;
+    display: flex;
+    align-items: center;
+}
+/* 로고 전체 */
+.main-navi .logo a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #ff385c;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+}
+/* 로고 문양 */
+.main-navi .logo i {
+    font-size: 40px;
+    margin-right: 7px;
+}
+/* 로고 옆 텍스트 */
+.main-navi .logo #title{
+    text-decoration: none;
+    font-size: 24px;
+    color: #ff385c;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    margin-top: 5px;
+}
+.main-navi .search {
+    width: 300px;
+    height:40px;
+    border:1px solid lightgrey;
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 4px;   
+}
+.main-navi .search .r-icon {
+    background-color: #ff385c;
+    border-radius: 50%;
+    padding:8px;
+    display: flex;
+    align-items: center;
+}
+
+.main-navi .menu .be_a_host {
+    font-size: small;
+    width: 80px;
+    height:40px;
+    border:1px solid white;
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 4px;   
+    position: relative;
+    z-index: 1;
+    
+}
+.main-navi .menu .be_a_host:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.main-navi .menu .language {
+    font-size: 16px;
+    width: 55px;
+    height:40px;
+    border:1px solid white;
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 4px;   
+}
+
+.main-navi .menu .user {
+    width: 80px;
+    height:40px;
+    border:1px solid rgb(236, 236, 236);
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    padding-left: 12px;
+    padding-right: 6px;
+    transition-duration: 0.3s;
+}
+
+.main-navi .menu .user:hover {
+    box-shadow: 2px 2px 5px grey;
+}
+.main-navi .menu .user .user-bar {
+    font-size: 16px;
+}
+.main-navi .menu .user .user-face {
+    font-size: 28px;
+}
+
+
+.main-navi .menu .language:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.main-navi .menu .language .language-v {
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+
+.main-navi .menu {
+    height:80px;
+    display: flex;
+    align-items: center;
+}
+
+.main-title {
+    margin-left: 8%;
+    margin-top: 280px;
+    width : 290px;
+    height : 200px;
+}
+
+.main-title h1 {
+    margin: 8px;
+    color: white;
+    font-size: 2em;
+}
+
+.main-title p {
+    margin: 8px;
+    color: white;
+    font-size: 13px;
+
+}
+
+.main-title .LookingForNearTravel {
+    margin: 8px;
+    padding-top : 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;;
+    font-size: 14px;
+    border-radius: 8px;
+    line-height: 18px;
+    background-color: white;
+    border:1px solid white;
+
+    transition-duration: 0.2s;
+    transition-property: ease, ease, ease, ease;
+    transition-delay: initial, initial, initial, initial;
+    transition-property: box-shadow, -ms-transform, transform, transform;
+}
+
+.main-title .LookingForNearTravel:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.main-title .LookingForNearTravel:active {
+    transform: scale(0.95);
+    color:black;
+}
+
+#everywhere {
+    /* 백그라운드 */
+    background-color: white;
+    background-size: cover;
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 4%;
+}
+
+#everywhere .grid {
+   display:grid;
+   grid-template-columns: repeat(3,1fr);
+}
+
+#everywhere .grid .item1, .item2, .item3 {
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 1px soild black;
+    background-color: white;
+    font-size:1.3rem;
+    text-align: center;
+    border-radius: 5%;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 67.5%;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 5px lightgray;
+ }
+
+ #everywhere .grid h3 {
+     font-size: large;
+     font-weight: 400;
+     margin-bottom: 4px;
+ }
+ #everywhere .grid p {
+    font-size: 14px;
+    color: gray;
+}
+ 
+#everywhere .grid .item1 {
+    cursor: pointer;
+    background: url(image/space.jpg) no-repeat top white;
+    background-size: contain ;
+}
+
+#everywhere .grid .item2 {
+    cursor: pointer;
+    background: url(image/experience.jpg) no-repeat top white;
+    background-size: contain;
+}
+#everywhere .grid .item3 {
+    cursor: pointer;
+    background: url(image/house.jpg) no-repeat top white;
+    background-size: contain;
+}
+
+#online-life {
+    /* 백그라운드 */
+    background-color: black;
+    background-size: cover;
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 4%;
+    color: white;
+}
+
+#online-life .online-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#online-life .online-experience h1 {
+    width: 118px;
+    height : 34px;
+}
+
+#online-life .online-explain p {
+    width: 437px;
+    height : 61px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+#online-life .online-experience .BrowseAll {
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:1px solid white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+#online-life .online-experience .BrowseAll:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+#online-life .itemList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:16px;
+}
+
+#online-life .element {
+    cursor:pointer;
+    background-color: rgb(34, 34, 34);
+    display:inline-block;
+    text-align: left;
+    font-size:16px;
+    padding-top:330px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    border-radius:20px;
+}
+
+#online-life .element1 {
+    background: url(image/onlineExperience1.jpg) no-repeat top rgb(34, 34, 34);
+    background-size: 100% 90% ;
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+#online-life .element2 {
+    background: url(image/onlineExperience3.jpg) no-repeat top rgb(34, 34, 34);
+    background-size: 100% 80%  ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+#online-life .element3 {
+    background: url(image/onlineExperience2.jpg) no-repeat top rgb(34, 34, 34);
+    background-size: 100% 80% ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+#online-life .element4 {
+    background: url(image/onlineExperience4.jpg) no-repeat top rgb(34, 34, 34);
+    background-size: 100% 80% ;
+    grid-column: span 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+#list {
+    /* 백그라운드 */
+    background-color: rgb(247, 247, 247);
+    background-size: cover;
+    padding-top: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 1.2%;
+    color: black;
+}
+
+#list .table-list{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#list .table-list th{
+    text-align: left;
+    padding-top:9px;
+    padding-bottom:9px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#list .table-list td{
+    text-align: left;
+    padding-top:9px;
+    padding-bottom:9px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#list .table-list td:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#list hr {
+    margin-top: 50px;
+    border: none;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+#footer {
+    /* 백그라운드 */
+    background-color: rgb(247, 247, 247);
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 1.2%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footerInformation {
+    display: flex;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#footer .dot {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#footer .PIProcessingPolicy:hover, .termsOfUse:hover, .sitemap:hover, .refundPolicy:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#footer .footerElse {
+    display: flex;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#footer .languageSelectIcon {
+    margin-right: 6px;
+}
+#footer .languageSelect {
+    display: flex;
+    text-decoration: underline;
+    font-weight: 400;
+    margin-right: 30px;
+}
+#footer .languageSelect:hover {
+    cursor: pointer;
+    color:rgb(50, 50, 50)
+}
+
+#footer .exchangeRateSelectIcon {
+    margin-right: 6px;
+}
+#footer .exchangeRateSelect {
+    display: flex;
+    text-decoration: underline;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+#footer .exchangeRateSelect:hover {
+    cursor: pointer;
+    color:rgb(50, 50, 50)
+}
+
+#footer .facebook {
+    margin-left: 27px;
+}
+#footer .twitter {
+    margin-left: 27px;
+}
+#footer .instagram {
+    margin-left: 27px;
+}
+#footer .naverBlog {
+    margin-left: 27px;
+}
+#footer .naverBlog:hover {
+    cursor: pointer;
+}
+#footer .naverPost {
+    margin-left: 27px;
+}
+#footer .naverPost:hover {
+    cursor: pointer;
+}
